@@ -7,7 +7,7 @@ void KMain()
 {
     void (*AppModInit)() = (void*)BaseOfApp;
     
-    PrintString("LemonOS\n");
+    PrintString("HJTOS\n");
     
     PrintString("GDT Entry: ");
     PrintIntHex((uint)gGdtInfo.entry);
@@ -25,7 +25,7 @@ void KMain()
     PrintIntDec((uint)gIdtInfo.size);
     PrintChar('\n');
     
-    PrintString("Dear user, Welcome to LemonOS!");
+    PrintString("Dear user, Welcome to HJTOS!");
     PrintChar('\n');
     
     MemModInit((byte*)KernelHeapBase, HeapSize);
